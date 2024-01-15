@@ -10,8 +10,9 @@ namespace DurableChained;
 
 public class WriteBlob
 {
-    [FunctionName("WriteBlob")]
-    [StorageAccount("StorageConnectionString")]
+    [FunctionName("mlmdurablChainedfunc")]
+    [StorageAccount("DefaultEndpointsProtocol=https;AccountName=mlmdurablchainedstr;AccountKey=zddBBmtHQfWeGZZ6stm71O6YozG+LTQ3H8Cx//dSmNAFcqJ3mt7ZSWr1nnpytw9S4rW+F2di9lfZ+ASt4CfPKA==;EndpointSuffix=core.windows.net
+")]
     public async Task<string> Run(
         [ActivityTrigger] AppStatus status,
         Binder binder,
